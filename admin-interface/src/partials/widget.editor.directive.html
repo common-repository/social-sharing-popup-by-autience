@@ -1,0 +1,39 @@
+<div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs yel-select-tabs">
+        <li ng-show="mode == 'create'">
+            <a ng-show="widgetCount() > 0">Create a new widget:</a>
+            <a ng-hide="widgetCount() > 0">Create your first widget:</a>
+        </li>
+        <li ng-show="mode == 'edit'">
+            <a>Editing '{{widget.configuration.what.name}}':</a>
+        </li>
+        <li ng-class="tabClasses(0)" ng-show="mode=='create'">
+            <a aria-controls="selectTheme" ng-click="gotoTab(0)"><span ng-show="mode=='create'">1. </span>Select</a>
+        </li>
+        <li ng-class="tabClasses(1)">
+            <a aria-controls="customizeDesign" ng-click="gotoTab(1)"><span ng-show="mode=='create'">2. </span>Design</a>
+        </li>
+        <li ng-class="tabClasses(2)">
+            <a aria-controls="configurePopup" ng-click="gotoTab(2)"><span ng-show="mode=='create'">3. </span>Configure</a>
+        </li>
+        <li ng-class="tabClasses(3)" ng-show="mode=='create'">
+            <a aria-controls="createPopup" ng-click="gotoTab(3)"><span ng-show="mode=='create'">4. </span>Activate</a>
+        </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane yel-tab-content-wrapper" ng-class="{'active':(selectedTab == 0)}">
+            <theme-selection></theme-selection>
+        </div>
+        <div class="tab-pane yel-tab-content-wrapper" ng-class="{'active':(selectedTab == 1)}">
+            <widget-design></widget-design>
+        </div>
+        <div class="tab-pane yel-tab-content-wrapper" ng-class="{'active':(selectedTab == 2)}">
+            <widget-configure></widget-configure>
+        </div>
+        <div class="tab-pane yel-tab-content-wrapper" ng-class="{'active':(selectedTab == 3)}">
+            <ng-include src="createUrl()" ng-controller="WidgetCreateController"></ng-include>
+        </div>
+    </div>
+</div>

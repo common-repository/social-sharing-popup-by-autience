@@ -1,0 +1,39 @@
+{
+    "scripts": [{
+        "base": "/vendor/scripts",
+        "items": ["angular.min", "angular-animate.min", "angular-aria.min", "angular-ui-router.min", "api-check.min", "formly.min", "angular-formly-templates-bootstrap.min", "angular-messages.min", "json-formatter.min", "ui-bootstrap-tpls-0.12.0.min", "angular-md5.min", "angular-cookies.min", "angular-local-storage.min"]
+
+    }, {
+        "base": "/src/scripts",
+        "items": ["app"]
+    }, {
+        "base": "/src/scripts/controllers",
+        "items": ["gopremium", "list", "main", "start", "auth.form", "goals", "build", "build.select", "build.design", "build.configure", "build.activate", "build.launch", "build.launch.statistics", "build.launch.package","email.list","extension.sale","modal.feedback"],
+
+        "suffix": ".controller"
+    }, {
+        "base": "/src/scripts/directives",
+        "items": ["component", "component.form", "bind.html", "network.share", "email.element", "paypal", "goal","email.connector","email.part","extension.paypal"],
+        "suffix": ".directive"
+    }, {
+        "base": "/src/scripts/services",
+        "items": ["component", "settings", "comm", "utils", "subscription.auth", "widget.update", "upgrade"],
+        "suffix": ".service"
+    }, {
+        "base": "/src/scripts/constants",
+        "items": ["configuration"],
+        "suffix": ".constant"
+    }],
+    "styles": [{
+        "base": "/vendor/styles",
+        "items": ["json-formatter.min", "bootstrap.min", "unsemantic-grid-responsive"]
+
+    }, {
+        "base": "/src/styles/",
+        "items": ["index", "toggle-switch", "subscribe"]
+    }],
+    "directjs": ["/common/loader","/wordpress/admin-wordpress"],
+
+    "server": "http://127.0.0.1:3001",
+    "static": "http://localhost:3001"
+}

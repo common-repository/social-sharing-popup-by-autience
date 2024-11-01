@@ -1,0 +1,41 @@
+<div class="">
+    <!--popup design-->
+    <div class="row">
+        <div class="col-xs-4 col-md-4">
+            <div>
+                <small class="text-muted">Select a section to configure:</small>
+ 
+                <div class="panel-group">
+                    <div class="panel panel-default" ng-repeat="(section, title) in sections">
+                        <div class="panel-heading" ng-click="(now.editing=section)">
+                            <h4 class="panel-title">
+                                <a href="" class="accordion-toggle">
+                                    <span>{{title}} </span>
+                                    <i ng-show="(now.editing==section)" class="pull-right glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="yel-button-green" ng-click="nextStage()" ng-show="mode == 'create'">Next Step</div>
+                    <div class="yel-button-green" ng-click="saveWidget()" ng-show="mode == 'edit' && !saving">Save</div>
+                    <div class="yel-button-green" ng-show="mode == 'edit' && saving">Saving..</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-8 col-md-8 yel-widget-design yel-customize-block">
+            <!--<div class="row">
+                <button class="btn btn-default pull-right" ng-click="selectedTab=3">Next</button>
+            </div>-->
+            <div ng-show="now.editing==section" ng-repeat="(section, title) in sections">
+                <formly-form model="widget.configuration" fields="configFields[section]"></formly-form>
+                <ng-include src="description()"></ng-include>
+            </div>
+            <!--<a type="button" href="#premium" class="btn btn-primary">Go premium</a>-->
+        </div>
+    </div>
+</div>
+<!--
+<json-formatter json="widget.configuration"></json-formatter>
+-->

@@ -1,0 +1,953 @@
+.yel-pointer {
+    cursor: pointer;
+}
+
+.yel-bold {
+    font-weight: bold;
+}
+
+.yel-component {
+    outline: 1px dashed #01A89E !important;
+}
+
+.yel-widget-design .yel-popup-template {
+    margin-top: 10px !important;
+    cursor: default;
+}
+
+.yel-widget-design {
+    padding-left: 5px;
+}
+
+.yel-current-menu {
+    outline: 2px solid white;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    font-weight: bold;
+    color: black !important;
+}
+
+.list-group-item {
+    border-top: 1px solid #F2F2F2 !important;
+}
+
+.list-group-item a {
+    color: #424242 !important;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.yel-last-screen {
+    text-align: left !important;
+}
+
+#yetience_submit_button {}
+
+.yel-ls-text {
+    padding: 80px 0px 20px 0px;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.yel-current-menu a {
+    color: #03998F !important;
+    margin-bottom: 20px;
+}
+
+label input[type="checkbox"],
+label input[type="radio"] {
+    margin-top: 2px;
+}
+
+.yel-customize-block {
+    padding-left: 20px;
+}
+
+.yel-hidden {
+    visibility: hidden;
+}
+
+.yel-quick-save {
+    font-size: 12px !important;
+    cursor: pointer;
+}
+
+.yel-feedback-block {
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.yel-table-top td {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.yel-list-page-heading {
+    font-size: 16px;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    line-height: 20px;
+    padding: 20px 0px 20px 16px;
+    text-align: center;
+}
+
+.yel-edit-link {
+    border: none;
+}
+
+.yel-add-widget {
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.yel-spl-col4 {
+    text-align: center;
+}
+
+.yel-add-new-popup {
+    float: right;
+    display: block;
+}
+
+.yel-component-form textarea {
+    line-height: 16px;
+    min-width: 200px;
+}
+
+.yel-tab-content-wrapper {
+    border: 1px solid #DDDDDD;
+    border-top: none;
+    padding: 20px;
+}
+
+.yel-admin-wrapper {
+    background-color: white;
+    /*padding: 10px;*/
+}
+
+.yel-admin-topbar {
+    background-color: #03998F;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    padding-left: 20px;
+    font-family: Century Gothic, sans-serif;
+    font-size: 16px;
+}
+
+.yel-popup-layout-modal {
+    background: url('../images/modal-background.png') top left repeat;
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.yel-modal-content {
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.yel-modal-popup-title {
+    font-family: Georgia;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.yel-modal-popup-image img {
+    width: 500px;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.yel-buttons-holder {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.yel-modal-buttons {
+    width: 49%;
+    display: inline-block;
+    color: #D8D8D8;
+    cursor: pointer;
+    height: 20px;
+}
+
+.yel-modal-buttons:hover {
+    color: white
+}
+
+.yel-admin-menubar {
+    background-color: #01A89E;
+}
+
+.yel-admin-menu-item {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+}
+
+.yel-admin-menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.yel-admin-menu-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.yel-admin-menu-item-active {
+    border-bottom: 3px solid white;
+}
+
+.yel-title {
+    font-family: Century Gothic, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.yel-title-main-page {
+    font-family: Century Gothic, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.yel-subtitle-main-page {
+    font-family: Georgia;
+    font-size: 14px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.yel-subtitle {
+    font-size: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #A4A4A4;
+}
+
+.yel-create-popup-holder {
+    margin-bottom: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+.yel-float-right {
+    float: right;
+    display: block;
+}
+
+.yel-admin-menu-area {
+    margin-right: 20px;
+}
+
+#yel-new-popup-name {
+    height: 40px;
+    min-width: 300px;
+    text-align: center;
+}
+
+.yel-button-green {
+    background-color: #01A89E;
+    color: white;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0px 30px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #01A89E;
+}
+
+.btn-primary:hover {
+    background-color: #01A89E;
+}
+
+.yel-button-green:hover {
+    background-color: #03998F;
+}
+
+.yel-button-gray {
+    background-color: #E6E6E6;
+    color: gray;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0px 20px;
+    display: inline-block;
+}
+
+.yel-button-gray:hover {
+    background-color: #D8D8D8;
+}
+
+.yel-below-image {
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: none;
+}
+
+
+/* ---------------------- yel-saved-popups-wrapper ----------------------*/
+
+.yel-menu-item {
+    display: inline-block;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.yel-menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.yel-menu-item:hover {
+    background-color: #008279;
+}
+
+.yel-menu-item-active {
+    background-color: white;
+}
+
+.yel-menu-item-active a {
+    color: black;
+}
+
+.yel-menu-item-active:hover {
+    background-color: white;
+}
+
+.yel-menu-item-premium {
+    background-color: #DF3A01;
+}
+
+.yel-menu-item-premium:hover {
+    background-color: #C13607;
+}
+
+
+/* -----------------------------yel-popup-lab-wrapper---------------------- */
+
+.yel-select-tabs {
+    background-color: #F1F1F1;
+}
+
+.yel-select-tabs li {
+    cursor: pointer;
+}
+
+.yel-select-tabs li a {
+    color: gray;
+    text-decoration: none;
+}
+
+.yel-select-tabs .active a {
+    color: #01A89E !important;
+    font-weight: bold;
+}
+
+.yel-popup-lab-wrapper {}
+
+.yel-premium-tag-images {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    margin-top: -22px;
+    position: absolute;
+    color: white;
+    background-color: #DF3A01;
+    padding: 3px 6px;
+}
+
+.yel-popup-layout-heading {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    /*
+    color: #03998F;
+    font-weight: bold;*/
+}
+
+.yel-popup-layout-heading div {
+    padding-left: 30px;
+}
+
+.yel-popup-layout-heading img {
+    float: left;
+}
+
+.yel-popup-layouts {}
+
+.yel-popup-type-icons {
+    width: 30px;
+    margin-right: 8px;
+}
+
+.yel-popup-layout-wrapper {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px !important;
+    width: 250px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.yel-popup-layout-wrapper-arrow {
+    display: inline-block;
+    width: 30px;
+}
+
+.yel-popup-layout-wrapper-arrow img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    padding-bottom: 80px;
+}
+
+.yel-popup-layout-wrapper:hover {
+    /*border:1px solid #BDBDBD;*/
+}
+
+.yel-popup-layout-wrapper .yel-popup-dp {
+    position: relative;
+    text-align: center;
+    height: 200px;
+}
+
+.yel-popup-layout-wrapper .yel-popup-dp img {
+    width: 100%;
+    height: 100%;
+}
+
+.yel-popup-layout-wrapper .yel-popup-dp img:hover {
+    /*-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.54);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.54);
+    outline: 1px solid white;
+    padding: 1px;*/
+}
+
+.yel-popup-layout-wrapper .yel-popup-name {
+    /*background-color: #F2F2F2;*/
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 13px;
+    /*display: none;*/
+}
+
+.list-group-item {
+    border-left: none;
+    border-right: none;
+}
+
+
+/* -----------------------yel-popup-creation-wrapper------------------------*/
+
+.yel-popup-creation-wrapper {}
+
+.yel-creation-table {
+    display: table;
+    width: 100%;
+}
+
+.yel-popup-creation-cols {
+    display: table-cell;
+    width: 48%;
+    vertical-align: top;
+    padding-left: 30px;
+}
+
+.yel-popup-creation-col1 {
+    text-align: center;
+    margin: 10px;
+    border-right: 1px dashed #E0E0E0;
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.yel-labels {
+    color: #848484;
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+
+.yel-creation-table textarea {
+    height: 180px;
+    width: 96%;
+}
+
+.yel-creation-table input[type="text"] {
+    height: 30px;
+    width: 96%;
+}
+
+.yel-display-set-rows {
+    padding: 5px 0px;
+}
+
+.yel-form-element {
+    padding-bottom: 10px;
+}
+
+.yel-form-element-2 {
+    display: inline-block;
+    width: 48%;
+}
+
+.yel-blank-popup-preview {
+    border: 1px solid #BDBDBD;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.yel-extensions-view-wrapper,
+.yel-billing-view-wrapper {}
+
+.yel-extensions-list {}
+
+.yel-extensions-item {
+    display: inline-block;
+    width: 45%;
+    border: 1px solid #D8D8D8;
+    vertical-align: top;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.yel-extensions-item-col1 {}
+
+.yel-extensions-item-col1 img {
+    float: left;
+    margin-right: 10px;
+}
+
+.yel-extensions-item-col1 .yel-ext-title {
+    font-size: 18px;
+    font-family: Georgia;
+    margin-bottom: 7px;
+}
+
+.yel-extensions-item-col1 .yel-ext-button {
+    border-radius: 5px;
+    padding: 6px 16px;
+    background-color: #D8D8D8;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.yel-extensions-item-col1 .yel-ext-button:hover {
+    background-color: #01A89E;
+    color: white;
+}
+
+.yel-billing-subtitle {
+    color: #A4A4A4;
+    margin-top: 20px;
+}
+
+.yel-billing-bigtitle {
+    font-family: Georgia;
+    font-size: 18px;
+}
+
+.yel-sup-ask-bar {
+    border-bottom: 1px solid #D8D8D8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.yel-sup-heading {
+    font-size: 24px;
+    color: #585858;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.yel-sup-subheading {
+    font-size: 14px;
+    padding-top: 5px;
+    color: #848484;
+}
+
+.yel-sup-smallheading {
+    font-size: 16px;
+    color: #03998F;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    padding-bottom: 10px;
+}
+
+#yel-sup-message {
+    height: 30px;
+    width: 600px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#yel-sup-message:focus {
+    height: 100px;
+}
+
+.yel-sup-form {
+    padding-top: 40px;
+}
+
+#yel-sup-name,
+#yel-sup-email {
+    display: inline-block;
+    width: 298px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 14px;
+    padding: 0px 5px;
+}
+
+.yel-sup-faq-wrapper {
+    padding: 20px 20px;
+}
+
+.yel-sup-faq-col {
+    display: inline-block;
+    width: 45%;
+    margin-top: 40px;
+}
+
+.yel-sup-faq {
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #848484;
+    font-size: 14px;
+}
+
+.yel-sup-q {
+    padding: 5px;
+    padding-left: 0px;
+    color: #585858;
+    font-size: 14px;
+}
+
+.yel-sup-a {
+    display: none;
+}
+
+.yel-sup-q:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.yel-prm-page {
+    text-align: center;
+    padding: 40px 20px;
+    padding-top: 60px;
+}
+
+.yel-prm-heading {
+    font-size: 22px;
+    color: #585858;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin-bottom: 10px;
+}
+
+.yel-prm-plan-wrapper {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.yel-prm-plan {
+    border: 1px solid #D8D8D8;
+    padding: 15px;
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+    color: #585858;
+    font-size: 14px;
+}
+
+.yel-prm-features {
+    border: 1px solid #D8D8D8;
+    padding: 15px;
+    display: inline-block;
+    width: 400px;
+    margin-right: 10px;
+    text-align: right;
+    color: #848484;
+    font-size: 14px;
+}
+
+.yel-prm-feature-heading {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #03998F;
+}
+
+.yel-prm-feature-heading-small {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.yel-prm-item {
+    border-bottom: 1px dashed #BDBDBD;
+    padding: 20px 0px;
+    min-height: 16px;
+}
+
+.yel-prm-item-large {
+    min-height: 40px;
+}
+
+.yel-prm-item-no-border {
+    border: none;
+}
+
+.yel-prm-button {
+    color: white;
+    display: inline-block;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.yel-prm-button-bg {
+    background-color: #03998F;
+}
+
+.yel-prm-button:hover {
+    background-color: #008279;
+}
+
+.yel-prm-item-price {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.yel-feedback-wrapper {
+    border: 1px dashed #D8D8D8;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.yel-ques {
+    font-size: 12px;
+    color: #848484;
+}
+
+.yel-smilies {
+    display: inline-block;
+    margin: 10px 3px 0px 3px;
+    cursor: pointer;
+}
+
+.yel-smilies img {
+    width: 40px;
+    height: auto;
+}
+
+.yel-feedback-form {
+    padding-top: 10px;
+    display: none;
+}
+
+.yel-feedback-textbox {
+    height: 30px;
+    width: 300px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.yel-feedback-textarea {
+    height: 80px;
+    width: 300px;
+    font-size: 14px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.yel-form-textarea {
+    width: 100%;
+}
+
+.yel-after-widget {
+    margin-top: 10px;
+}
+
+
+/*----------- styles for component column ----------------- */
+
+.yel-component-form {
+    font-size: 14px !important;
+}
+
+.form-control {
+    width: 95%;
+}
+
+.form-group,
+{
+    width: 100% !important;
+}
+
+p.submit {
+    text-align: center;
+}
+
+#myotziv_box {
+    margin-top: 100px;
+}
+
+.yel-main-block {}
+
+.yel-plugin-header {
+    background-color: #03998F;
+}
+
+.yel-plugin-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#wpbody-content {
+    width: 98% !important;
+}
+
+.yel-list-page-wrapper {
+    padding-top: 50px;
+}
+
+.yel-starter-wrapper {
+    padding-top: 40px;
+}
+
+.yel-starter-wrapper .yel-sup-subheading {
+    margin-bottom: 20px;
+}
+
+.yel-newuser-menubar {
+    padding: 0px;
+    height: auto;
+    display: block !important;
+}
+
+.yel-newuser-menubar,
+.yel-newuser-menubar-list {}
+
+.yel-newuser-menubar-list li {
+    height: 50px !important;
+    line-height: 50px;
+    margin-bottom: 0px;
+    border-left: 1px solid #E7E7E7;
+}
+
+.yel-newuser-menubar-list .yel-activeitem a {
+    /*color: #36BAA0 !important;*/
+    font-weight: bold;
+    background-color: #F1F1F1 !important;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.table-striped-column > tbody > tr td:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.yetience-container {
+    border: 1px solid #ddd;
+    min-height: 600px;
+}
+
+.yel-config-options > li {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+.yel-show-features
+{
+    
+}
+.yel-lite-summary-features
+{
+    text-align: center;
+    padding: 10px 0px;
+}
+.yel-lite-summary-features u,
+.yel-lite-summary-features p
+{
+    cursor: pointer;
+}
+.yel-lite-summary-features p
+{
+    font-weight: bold;
+}
+.yel-lite-summary-features p:hover
+{
+    text-decoration: underline;
+}
+.yel-lite-summary-features .btn
+{
+    margin-top: 10px;
+}
+.yel-show-premium-features
+{
+    padding-top: 60px;
+    text-align: center;
+}
+.yel-show-features .table td
+{
+    border:1px solid #F2F2F2 !important;
+}
+
+.yel-list-view-prem-data
+{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.yel-instructions{
+    width: 350px
+}
+.yel-instructions > ul{
+    list-style-type: circle;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#autience-save-message{
+    text-align: left;
+}

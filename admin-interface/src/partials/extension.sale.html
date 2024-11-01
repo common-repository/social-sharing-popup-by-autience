@@ -1,0 +1,48 @@
+
+<div class="col-md-10 col-md-offset-1" ng-hide="SS.setup().package_id!='default'">
+    <div class="panel panel-default yel-list-table">
+        <div class="panel-heading">
+            <div class="panel-title" style="display:inline-block">Unlock these Addons and Boost your Conversions</div>
+            <div class="pull-right text-muted" style="display:inline-block">5 Day Trial. Cancel Anytime</div>
+        </div>
+        <row ng-repeat="feature in R.features">
+            <div class="panel-body" style="padding:0px;">
+                <div class="col-md-2" style="vertical-align:center;">
+                    <center style="margin-top:30px">
+                        <span class="glyphicon" ng-class="featureIcon(feature)" style="font-size: 80px;"></span>
+                    </center>
+                </div>
+                <div class="col-md-7 pull-left">
+                    <h3>
+                        {{feature.title}}
+                    </h3>
+                    <div style="maring-top:10px">
+                        <strong>Why should you use this?</strong>
+                        <p class="text-muted">
+                            {{feature.why}}
+                        </p>
+                    </div>
+                    <div style="maring-top:10px">
+                        <strong>Who uses this?</strong>
+                        <p class="text-muted"> {{feature.who}}</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-md-3" style="position:relative">
+                    <center style="margin-top:30px">
+                        <div ng-hide="SS.hasFeature(feature.label)">
+                            <strong >{{priceForFeature(feature.label)}}$ a month</strong>
+                            <div extension-paypal websiteid="{{website_id}}" feature='{{feature.label}}' price='{{priceForFeature(feature.label)}}'></div>
+                        </div>
+
+                        <div ng-show="SS.hasFeature(feature.label)">
+                            <span class="glyphicon glyphicon-ok" style="font-size: 40px;"></span>
+                            <div>Unlocked</div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <hr>
+        </row>
+    </div>
+</div>

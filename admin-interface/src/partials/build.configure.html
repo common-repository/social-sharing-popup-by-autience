@@ -1,0 +1,24 @@
+<div ng-init="W.current.state = 'configure'; 
+        C.createNewEvent('popup_configuration_displayed')" class="row">
+    <!--popup design-->
+   
+    <div>
+        <small class="text-muted">Select a section to configure:</small>
+        <div style="margin-top:10px;padding:10px">
+            <accordion close-others="oneAtATime">
+                <accordion-group ng-repeat="(section, title) in sections">
+                    <accordion-heading>
+                        <span ng-class="{'yel-bold':isOpen[tag]}">{{title}}</span>
+                        <i ng-show="(now.editing==section)" class="pull-right glyphicon glyphicon-chevron-right"></i>
+                    </accordion-heading>
+                    <div>
+                      
+                        <formly-form model="R.widget.configuration" fields="configFields[section]"></formly-form>
+                       
+                        
+                    </div>
+                </accordion-group>
+            </accordion>
+        </div>
+    </div>
+</div>

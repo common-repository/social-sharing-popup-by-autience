@@ -1,0 +1,37 @@
+<div ng-init="W.current.state = 'select'; C.createNewEvent('themes_displayed')">
+    <!-- select a popup -->
+    <div id="yel-popup-layouts">
+        <div class="yel-subtitle"></div>
+        <div class="yel-popup-layouts" ng-repeat="cat in R.product.categories" 
+        ng-mouseenter="$last ? isVisible() : ''"
+        ng-init="page=0; categoryThemes=themesInCategory(cat)">
+            <div class="yel-popup-layout-heading">
+                <span class="glyphicon glyphicon-{{R.categories[cat].icon}}" aria-hidden="true"></span>
+                <!--<img ng-src="{{R.basePath}}/images/admin-icons/share.png" class="yel-popup-type-icons" />-->
+                <span>{{R.categories[cat].title}}</span>
+            </div>
+            <div class="yel-popup-layout-wrapper-arrow" ng-click="page=page-1" ng-class="{'yel-hidden':(page<=0)}">
+                <div>
+                    <img ng-src="{{R.basePath}}/images/admin-icons/left-arrow.png" /></img>
+                </div>
+            </div>
+            <div class="yel-popup-layout-wrapper yel-popup-thumbmail" ng-click="selectTheme(theme.label, theme)" ng-repeat="theme in R.categories[cat].themes" ng-show="$index >= page && $index < (rowLimit + page)" ng-mouseenter="highlightTheme = theme.label" ng-mouseleave="highlightTheme = null" ng-class="{'yel-highlight':(theme.label == highlightTheme)}">
+                <div class="yel-popup-dp">
+                    <img ng-src="{{R.staticPath}}/themes/{{theme.label}}/{{theme.label}}-screenshot.jpg">
+                    <!--
+                    <div class="yel-premium-tag-images" ng-show="theme.premium">Premium</div>
+                -->
+                </div>
+                <div class="yel-popup-name">{{theme.title}}</div>
+            </div>
+            <div class="yel-popup-layout-wrapper-arrow" ng-click="page=page+1" ng-class="{'yel-hidden':(page >= (R.categories[cat].themes.length - rowLimit))}">
+                <div>
+                    <div style="padding-bottom:5px; font-size:13px; color: #BDBDBD">
+                        + {{R.categories[cat].themes.length - rowLimit - page}}
+                    </div>
+                    <img ng-src="{{R.basePath}}/images/admin-icons/right-arrow.png" /></img>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

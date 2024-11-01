@@ -1,0 +1,24 @@
+<div class="">
+    <!--popup design-->
+    <div class="row">
+        <div class="col-xs-4 col-md-4 yel-component-form">
+            <component-form></component-form>
+        </div>
+        <div class="col-xs-8 col-md-8 yel-widget-design">
+            <link id="autience-theme-style" rel='stylesheet' ng-href='{{themeBase()}}/{{widget.theme}}-styles.css' type='text/css' ng-if="widget.theme" />
+            <link id="autience-common-style" rel='stylesheet' ng-href='{{commonCss()}}' type='text/css' ng-if="widget.theme" />
+            <!--<div class="row">
+                
+                <button class="btn btn-default pull-right" ng-click="saveTemplate()">Next</button>
+            </div>-->
+            <center>
+                <small class="text-muted">Preview (Please refresh page if layout is skewed)</small>
+            </center>
+            <div id="widget-design" bind-html-compile="widget_template"></div>
+        </div>
+    </div>
+
+    <div id="hidden-email-form" style="display:none">
+
+    </div>
+</div>

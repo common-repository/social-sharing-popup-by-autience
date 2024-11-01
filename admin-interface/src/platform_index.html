@@ -1,0 +1,30 @@
+<script>var autience_initiated_at = Date.now() </script>
+
+<div id="yetience-loader" class="cssload-wraper">
+    <div class="cssload-dots"></div>
+</div>
+<div class="" ng-controller="MainController">
+    <div id="yetience-content" style="display:none">
+        <nav class="navbar navbar-default yel-newuser-menubar" role="navigation" ng-hide="onStartPage()">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        {{R.Y.title}} ({{R.packages[S.package_id].name}})
+                    </a>
+                </div>
+                <div>
+                    <!--
+                    <ul class="nav navbar-nav navbar-right yel-newuser-menubar-list">
+                       
+                        <li ng-show="activeTab(['create','edit'])" ><a href="#list">Widgets</a></li>
+                    
+                        
+                    </ul>
+                -->
+                </div>
+            </div>
+        </nav>
+        <div ui-view>
+        </div>
+    </div>
+</div>

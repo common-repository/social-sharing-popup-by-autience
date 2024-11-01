@@ -1,0 +1,17 @@
+<div class="yel-starter-wrapper" ng-init="show_premium = false">
+
+    <center>
+        <div class="yel-prm-heading">Welcome to {{R.Y.title}}</div>
+        <div class="yel-sup-subheading">Watch this quick how-to video to get started.</div>
+        <div>
+            <iframe width="300" height="169" src="https://www.youtube.com/embed/7zeex7EyDmE" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div style="margin-top:50px" class="yel-sup-subheading" ng-hide="show_premium">
+            You are currently using a lite version.
+            <br> Here's a list of <a class="yel-pointer" ng-click="show_premium = true">available features</a> in the premium version
+        </div>
+
+        <div style="width:75%" ng-include="premiumPartial()" ng-show="show_premium" ng-controller="GoPremiumController"></div>
+    </center>
+</div>
+

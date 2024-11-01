@@ -1,0 +1,104 @@
+<div class="row yel-list-page-wrapper" ng-if="R.setup_initialized" ng-hide="R.readyToSave">
+    <div class="col-xs-12 col-md-10 col-md-offset-1" ng-show="setup_initialized">
+        <div class="panel panel-default yel-list-table">
+            <div class="panel-heading">
+                <div class="yel-add-new-popup">
+                    <a href="#/create/build/select" style="cursor:pointer" class="btn btn-default btn-xs yel-add-widget" style="color:#01A89E">
+                        <span class="glyphicon glyphicon-plus"></span><b style="font-size:14px;">&nbsp;Add New Widget</b></a>
+                </div>
+                <div class="panel-title" style="inline-block">Your Widgets:</div>
+            </div>
+            <!-- Table -->
+            <table class="table">
+                <tr class="yel-table-top">
+                    <td class="yel-spl-col1">#</td>
+                    <!--<td class="yel-spl-col2">Widget Name</td>-->
+                    <td class="yel-spl-col3">Widget Type</td>
+                    <td class="yel-spl-col3">Shown on</td>
+                    <td class="yel-spl-col3">Active</td>
+                    <!--<td class="yel-spl-col4">Enabled</td>-->
+                    <!--
+                    <td class="yel-spl-col5">Edit</td>
+                    <td class="yel-spl-col5">Configure</td>
+                    <td class="yel-spl-col5">Delete</td>
+                -->
+                </tr>
+                <tr ng-repeat="comp in list.widgets track by $index">
+                    <td class="yel-spl-col1">{{$index+1}}</td>
+                    <!--<td class="yel-spl-col3">
+                        {{comp.configuration.what.name}}
+                    </td>-->
+                    <td class="yel-spl-col2">
+                        {{R.themes[comp.theme].title}}
+                    </td>
+                    <td class="yel-spl-col2">
+                        <span ng-show="comp.configuration.where.home == true && comp.configuration.where.other=='all'">All Pages</span>
+                        <span ng-hide="comp.configuration.where.home == true && comp.configuration.where.other=='all'">Selected Pages</span>
+                        <!--
+                        {{comp.configuration.where}}
+                    -->
+                    </td>
+                    <td class="yel-spl-col2">
+                        <input type="checkbox" ng-model="comp.configuration.what.enable" ng-change="changeEnable(comp.configuration.what.enable, comp.configuration.what.name)">
+                    </td>
+                    <!--<td class="yel-spl-col4">
+                        <input type="checkbox" ng-model="comp.configuration.what.enable"><span class="yel-quick-save"> Save</span>
+                    </td>-->
+                    <td class="yel-spl-col5 yel-edit">
+                        <a ng-href="#/edit/build/design?index={{$index}}" class="btn btn-default btn-xs yel-edit-link" ng-click="C.createNewEvent('edit_clicked')">
+                            <button class="btn btn-xs btn-default "><span class="glyphicon glyphicon-pencil text-muted"></span><span class="text-muted">&nbsp;Edit</span></button>
+                        </a>
+                    </td>
+                    <td class="yel-spl-col5 yel-edit">
+                        <a ng-click="configure($index);C.createNewEvent('configure_clicked')" class="btn btn-default btn-xs yel-edit-link pointer">
+                            <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-cog text-muted"></span><span class="text-muted">&nbsp;Configure</span></button>
+                        </a>
+                    </td>
+                    <td class="yel-spl-col5 yel-edit">
+                        <a ng-click="emailListModal($index);C.createNewEvent('email_list_clicked')" ng-show="isEmailTheme($index)">
+                            <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-envelope text-muted"></span><span class="text-muted">&nbsp;View Email List</span></button>
+                        </a>
+                    </td>
+                    <td class="yel-spl-col5 yel-edit">
+                        <a ng-click="removeWidget($index);C.createNewEvent('delete_clicked')" class="btn btn-default btn-xs yel-edit-link pointer">
+                            <span class="glyphicon glyphicon-remove text-muted"></span><span class="text-muted">&nbsp;Delete</span>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- Old version -->
+    <!-- <div class="col-md-10 col-md-offset-1" ng-hide="S.isPremium()">
+        <div class="panel panel-default yel-list-table">
+            <div class="panel-heading">Premium Features</div>
+            <div class="panel-body" style="padding:0px;">
+                <div class="col-md-6">
+                    <ul class="list-group" style="margin-bottom:0px">
+                        <li class="list-group-item">Show Popup on Mobile & Tablet Screens.</li>
+                        <li class="list-group-item">Show or Hide Popup on a Specific Pages.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6" style="margin-top:20px" ng-click="U.upgrade(R.packages.smartUX)">
+                    <center>
+                        <div>
+                            <small>Premium features are available at 10$ per month</small>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Try it Free for 14 days</button>
+                        </div>
+                        <div class="text-muted" ng-click="U.upgrade(R.packages.smartUX)">
+                            <small>(You can cancel anytime)</small>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+<div ng-include="extensionSalePartial()" ng-controller="extensionSaleController"></div>
+</div>
+<!--
+<json-formatter json="S.setup().widgets"></json-formatter>
+-->
